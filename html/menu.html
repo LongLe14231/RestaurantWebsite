@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <title>The block</title>
+    <style>
+        body {
+            font-size: 28px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0A2425;
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #FFC433;
+            text-decoration: none;
+        }
+
+
+        h5 {
+            text-align: center;
+        }
+
+        .address {
+            background: black;
+            color: white;
+            text-align: center;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+
+    </div>
+    <div class="address">
+        <h5>7 Dudley Street, Mansfield Park, South Australia 5012</h5>
+    </div>
+
+    <div>
+        <h5>Chef's special</h5>
+        <a href="../images/image17.jpg">
+        <img src="../images/image17.jpg" alt="Dish 1" width="600" height="345">
+        </a>
+    </div>
+
+    <!--------------------Menu Gallery------------------------->
+    <div class="container">
+
+
+        <hr class="mt-2 mb-5">
+
+        <div class="row text-center text-lg-left">
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="../images/image4.jpg" class="d-block mb-4 h-100">
+                    <h5>Dish 1</h5>
+                    <img class="img-fluid img-thumbnail" src="../images/image4.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="../images/image5.jpg" class="d-block mb-4 h-100">
+                    <h5>Dish 2</h5>
+                    <img class="img-fluid img-thumbnail" src="../images/image5.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="../images/image6.jpg" class="d-block mb-4 h-100">
+                    <h5>Dish 3</h5>
+                    <img class="img-fluid img-thumbnail" src="../images/image6.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="../images/image7.jpg" class="d-block mb-4 h-100">
+                    <h5>Dish 4</h5>
+                    <img class="img-fluid img-thumbnail" src="../images/image7.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="../images/image8.jpg" class="d-block mb-4 h-100">
+                    <h5>Dish 5</h5>
+                    <img class="img-fluid img-thumbnail" src="../images/image8.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="../images/image9.jpg" class="d-block mb-4 h-100">
+                    <h5>Dish 6</h5>
+                    <img class="img-fluid img-thumbnail" src="../images/image9.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="../images/image10.jpg" class="d-block mb-4 h-100">
+                    <h5>Dish 7</h5>
+                    <img class="img-fluid img-thumbnail" src="../images/image10.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="../images/image14.jpg" class="d-block mb-4 h-100">
+                    <h5>Dish 8</h5>
+                    <img class="img-fluid img-thumbnail" src="../images/image14.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright 2019 &copy; The Block</small>
+            <br>
+            <small>Connect with us</small><br>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
